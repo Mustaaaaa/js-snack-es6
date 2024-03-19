@@ -9,27 +9,52 @@
 // Generiamo e stampiamo in console la lista per i segnaposto.
 
 // creo l'array listaInvitati.
-const listaInvitati = [
-    {
-        nomeTavolo: 'Tavolo Vip',
-        nomeOspite: [],
-        posto: []
-    }
+// const listaInvitati = [
+//     {
+//         nomeTavolo: 'Tavolo Vip',
+//         nomeOspite: [],
+//         posto: []
+//     }
+// ];
+// // creo l'array nomiOspiti.
+// const nomiOspiti = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin'];
+
+// // creo il ciclo che mi pusha il nome ospite e il numero di posto che poi verrà stampato in console.
+// for (let i = 0; i < nomiOspiti.length; i++) {
+
+//     listaInvitati[0].nomeOspite.push(nomiOspiti[i]);
+//     listaInvitati[0].posto.push(i + 1);
+
+//     const nomeOspite = listaInvitati[0].nomeOspite[i];
+//     const posto = listaInvitati[0].posto[i];
+
+//     console.log(`
+//     Nome Tavolo: ${listaInvitati[0].nomeTavolo}
+//     Nome Ospite: ${nomeOspite}
+//     Numero Posto: ${posto}`);
+// };
+
+const nomiOspiti = [
+    'Brad Pitt',
+    'Johnny Depp',
+    'Lady Gaga',
+    'Cristiano Ronaldo',
+    'Georgina Rodriguez',
+    'Chiara Ferragni',
+    'Fedez',
+    'George Clooney',
+    'Amal Clooney',
+    'Maneskin'
 ];
-// creo l'array nomiOspiti.
-const nomiOspiti = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin'];
 
-// creo il ciclo che mi pusha il nome ospite e il numero di posto che poi verrà stampato in console.
-for (let i = 0; i < nomiOspiti.length; i++) {
+const listaSegnaPosto = nomiOspiti.map((elNome, i) => {
+    return {
+        nomeTavolo: 'Tavolo Vip',
+        nomeOspite: elNome,
+        posto: i + 1
+    };
+});
 
-    listaInvitati[0].nomeOspite.push(nomiOspiti[i]);
-    listaInvitati[0].posto.push(i + 1);
-    
-    const nomeOspite = listaInvitati[0].nomeOspite[i];
-    const posto = listaInvitati[0].posto[i];
-    
-    console.log(`
-    Nome Tavolo: ${listaInvitati[0].nomeTavolo}
-    Nome Ospite: ${nomeOspite}
-    Numero Posto: ${posto}`);
-};
+console.log(listaSegnaPosto);
+
+
