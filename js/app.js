@@ -119,4 +119,11 @@ const listaStudenti = [
 // lista nomi in maiuscolo
 const nomeInMaiuscolo = listaStudenti.map(studente => studente.nome.toUpperCase());
 console.log(nomeInMaiuscolo);
+// lista di tutti gli studenti che hanno un totale di voti superiore a 70
+let studentiConVotoSuperioreA70 = listaStudenti.filter((studente) => studente.voto > 70)
+console.log(studentiConVotoSuperioreA70);
 
+// lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
+let studentiConVotoSuperioreA70eIdA120 = listaStudenti.filter((studente) => studente.voto > 70 && studente.id > 120)
+console.log(studentiConVotoSuperioreA70eIdA120);
+console.log('fine snack 2');
