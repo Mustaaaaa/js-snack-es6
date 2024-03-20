@@ -1,3 +1,4 @@
+console.log('inizio snack 3');
 // SNACK 3
 // Creare un array di oggetti:
 // Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
@@ -27,13 +28,27 @@ const elencoBici = [
 ];
 
 
-const biciPiuLeggera = elencoBici[0]
+let biciPiuLeggera = elencoBici[0];
 
 for (let i = 0; i < elencoBici.length; i++) {
 
-    const bici = elencoBici[i]
-    console.log(bici);
+    const bici = elencoBici[i];
+    // console.log(bici);
 
+    if (bici.peso < biciPiuLeggera.peso) {
+
+        biciPiuLeggera = bici;
+       
+        console.log(`
+               bici più leggera: ${biciPiuLeggera.nome}  
+               peso: ${biciPiuLeggera.peso} kg
+               `);
+    }
 }
 
+console.log('fine snack 3');
 
+console.log('inizio snack 4');
+
+
+console.log('fine snack 4');
