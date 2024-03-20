@@ -5,23 +5,35 @@
 
 const elencoBici = [
     {
-        nomeBici: 'Mountain Crusher',
+        nome: 'Mountain Crusher',
         peso: 12
     },
     {
-        nomeBici: 'Speed Demon',
+        nome: 'Speed Demon',
         peso: 15
     },
     {
-        nomeBici: 'Urban Cruiser',
+        nome: 'Urban Cruiser',
         peso: 9
     },
     {
-        nomeBici: 'Stealth Rider',
+        nome: 'Stealth Rider',
         peso: 18
     },
     {
-        nomeBici: 'Electric Thunder',
+        nome: 'Electric Thunder',
         peso: 11
     }
 ];
+
+
+const biciPiuLeggera = elencoBici[0]
+
+for (let i = 0; i < elencoBici.length; i++) {
+
+    const bici = elencoBici[i]
+    console.log(bici);
+
+}
+
+
