@@ -84,20 +84,21 @@ const squadre = [
     }
 ];
 
-    console.log(squadre);
-for (let i = 0; i < 5; i++) {
+    // console.log(squadre);
+for (let i = 0; i < squadre.length; i++) {
     const puntiFatti = parseInt((Math.random() * 20))
     const falliSubiti = parseInt((Math.random() * 20) )
     const nome = squadre[i].nome;
 
     // console.log(puntiFatti);
     // console.log(falliSubiti);
-    console.log(`
-                   Squadra: ${nome}  
-                   Punti fatti: ${puntiFatti} 
-                   Falli Subiti: ${falliSubiti} 
-                   `);
-  
-    };
+    // console.log(`
+    //                Squadra: ${nome}  
+    //                Punti fatti: ${puntiFatti} 
+    //                Falli Subiti: ${falliSubiti} 
+    //                `);
+    const  nomiEFalliSubiti = { nome, falliSubiti }
+    console.log(nomiEFalliSubiti)
+};
 
 console.log('fine snack 4');
